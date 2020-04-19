@@ -19,6 +19,9 @@ precJumpMod = 1.3				// precise jump modifier
 baseGravity = 0.2				// default gravity force
 currentGravity = baseGravity	// currently applied gravity
 
+fakeEndTriggered = 0			// whether the first fake end (corrupt level) has triggered
+canExit = 1						// whether holding escape leads to the main menu
+
 okToDestroy = 0					// whether its okay to destroy the player instance (i.e. level changes)
 
 screenScroll = 0				// whether logic is paused due to screen scroll
@@ -32,9 +35,11 @@ yy = 0							// vertical movement vector
 // create a stat handler
 if !instance_exists(obj_savedStats) {
 	instance_create_layer(0, 0, "Instances", obj_savedStats)
+} else {
+	show_debug_message("Player skipped savedStats instance")
 }
 
-if !instance_exists(obj_toMainMenu) {
+if !instance_exists(obj_toMainMenu) && room != rm_tried_exit {
 	instance_create_layer(0, 0, "Instances", obj_toMainMenu)
 }
 
@@ -46,11 +51,16 @@ if obj_savedStats.savedX == 0 && obj_savedStats.savedY == 0 {
 	y = obj_savedStats.savedY
 }
 
+// load sfx
+if !audio_group_is_loaded(audiogroup_sfx) {
+	audio_group_load(audiogroup_sfx)
+}
+
 // create a camera if none exists
 if !instance_exists(obj_camera) {
 	instance_create_layer(x + facingCamOffset, y, "Instances", obj_camera)
 }
 
-if !audio_is_playing(ost) {
-	audio_play_sound(ost, 1, 1)
+if !instance_exists(obj_musicPlayer) {
+	instance_create_layer(0, 0, "Instances", obj_musicPlayer)
 }

@@ -1,0 +1,2 @@
+str = "HE IS MAKING THE PROBLEMS UP"
+alive = 30

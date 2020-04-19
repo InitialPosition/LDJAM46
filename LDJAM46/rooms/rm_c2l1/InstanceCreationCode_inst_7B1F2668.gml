@@ -1,0 +1,1 @@
+sound = snd_vo_c2l1_2

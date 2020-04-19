@@ -57,10 +57,12 @@ if place_meeting(x, y, obj_jumpOrb) {
 if keyboard_check_pressed(jump) {
 	if onGround {
 		yy = jumpForce
+		audio_play_sound(snd_jump, 2, 0)
 	}
 	
 	if orbJump {
 		yy = jumpForce
+		audio_play_sound(snd_orb, 2, 0)
 		
 		orb = instance_nearest(x, y, obj_jumpOrb)
 		

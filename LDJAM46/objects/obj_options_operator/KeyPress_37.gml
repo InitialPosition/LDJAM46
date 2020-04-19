@@ -18,8 +18,7 @@ switch selection {
 		break
 }
 
-audio_group_set_gain(audiogroup_default, global.vol_mus, 0)
-audio_group_set_gain(audiogroup_commentary_c1, global.vol_nrt, 0)
+scr_setGains()
 
 baseOptions[0] = "MUSIC " + string(round(global.vol_mus * 100)) + "%"
 baseOptions[1] = "SFX " + string(round(global.vol_sfx * 100)) + "%"

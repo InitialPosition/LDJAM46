@@ -6,7 +6,7 @@
     "option_linux_allow_fullscreen": false,
     "option_linux_disable_sandbox": false,
     "option_linux_display_cursor": true,
-    "option_linux_display_name": "LDJAM46",
+    "option_linux_display_name": "In the Valley of Souls",
     "option_linux_display_splash": false,
     "option_linux_enable_steam": false,
     "option_linux_homepage": "",

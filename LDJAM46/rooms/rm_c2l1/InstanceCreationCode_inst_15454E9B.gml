@@ -1,0 +1,1 @@
+str = "HE IS GOING TO TRAP YOU HERE"

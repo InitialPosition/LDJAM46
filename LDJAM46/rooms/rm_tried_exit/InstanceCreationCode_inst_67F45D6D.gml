@@ -1,0 +1,1 @@
+str = "LEAVE BEFORE IT'S TOO LATE."

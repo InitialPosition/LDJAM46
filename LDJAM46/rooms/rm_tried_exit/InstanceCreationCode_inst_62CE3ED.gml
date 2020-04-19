@@ -1,0 +1,1 @@
+sound = snd_vo_exit_speech

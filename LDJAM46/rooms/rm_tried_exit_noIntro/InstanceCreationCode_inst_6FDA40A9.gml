@@ -1,0 +1,1 @@
+str = "Start a new game..."

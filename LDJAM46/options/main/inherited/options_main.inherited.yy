@@ -18,6 +18,26 @@
                     "groupName": "audiogroup_commentary_c1",
                     "targets": 461609314234257646
                 }
+            },
+            {
+                "Key": 2,
+                "Value": {
+                    "id": "e9a2ea55-9d45-4625-95e4-b5dbed5094eb",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "audiogroup_sfx",
+                    "targets": 461609314234257646
+                }
+            },
+            {
+                "Key": 3,
+                "Value": {
+                    "id": "37494099-1b72-406f-b339-0c807c0bcea6",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "audiogroup_commentary_c2",
+                    "targets": 461609314234257646
+                }
             }
         ],
         "Checksum": "濑Ⱥ朦씁ᬄ縈",
