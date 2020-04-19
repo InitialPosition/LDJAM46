@@ -41,10 +41,36 @@ if (!keyboard_check(left) && !keyboard_check(right)) || (keyboard_check(left) &&
 	}
 }
 
+// detect orbs
+if place_meeting(x, y, obj_jumpOrb) {
+	var orb = instance_nearest(x, y, obj_jumpOrb)
+	if orb.active {
+		orbJump = 1
+	} else {
+		orbJump = 0
+	}
+} else {
+	orbJump = 0
+}
+
 // jumping
 if keyboard_check_pressed(jump) {
 	if onGround {
 		yy = jumpForce
+	}
+	
+	if orbJump {
+		yy = jumpForce
+		
+		orb = instance_nearest(x, y, obj_jumpOrb)
+		
+		with orb {
+			active = 0
+			alarm[0] = 120
+			sprite_index = spr_orb_inactive
+			
+			part_emitter_stream(system, emit, global.part_jumpOrb, 0)
+		}
 	}
 }
 

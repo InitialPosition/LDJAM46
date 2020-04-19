@@ -7,10 +7,10 @@ if !locked {
 			room_goto(rm_c1l1)
 			break;
 		case 1:
-			// TODO load game
+			scr_loadGame()
 			break;
 		case 2:
-			// TODO options
+			room_goto(rm_options)
 			break;
 		case 3:
 			game_end()

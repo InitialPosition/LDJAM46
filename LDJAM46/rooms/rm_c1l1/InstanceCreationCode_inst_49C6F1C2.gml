@@ -1,1 +1,1 @@
-sound = snd_test2
+sound = snd_vo_c1l1_1

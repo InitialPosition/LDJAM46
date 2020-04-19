@@ -24,23 +24,31 @@ okToDestroy = 0					// whether its okay to destroy the player instance (i.e. lev
 screenScroll = 0				// whether logic is paused due to screen scroll
 
 onGround = 0					// whether the player is on solid ground
+orbJump = 0						// whether player can orb jump right now
 
 xx = 0							//horizontal movement vector
 yy = 0							// vertical movement vector
-
-// create a camera if none exists
-if !instance_exists(obj_camera) {
-	instance_create_layer(x + facingCamOffset, y, "Instances", obj_camera)
-}
 
 // create a stat handler
 if !instance_exists(obj_savedStats) {
 	instance_create_layer(0, 0, "Instances", obj_savedStats)
 }
 
+if !instance_exists(obj_toMainMenu) {
+	instance_create_layer(0, 0, "Instances", obj_toMainMenu)
+}
+
 if obj_savedStats.savedX == 0 && obj_savedStats.savedY == 0 {
 	obj_savedStats.savedX = x
 	obj_savedStats.savedY = y
+} else {
+	x = obj_savedStats.savedX
+	y = obj_savedStats.savedY
+}
+
+// create a camera if none exists
+if !instance_exists(obj_camera) {
+	instance_create_layer(x + facingCamOffset, y, "Instances", obj_camera)
 }
 
 if !audio_is_playing(ost) {

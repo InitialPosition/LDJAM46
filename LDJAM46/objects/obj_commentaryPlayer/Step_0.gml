@@ -4,7 +4,7 @@ if playing {
 	if !audio_is_playing(snd) {
 		instance_destroy()
 		
-		audio_group_set_gain(audiogroup_default, 1, 500)
+		audio_group_set_gain(audiogroup_default, global.vol_mus, 500)
 		
 		with audioNode {
 			active = 0

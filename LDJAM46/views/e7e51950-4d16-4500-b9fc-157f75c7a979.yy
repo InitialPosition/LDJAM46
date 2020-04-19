@@ -8,8 +8,11 @@
         "356b21ae-288f-41f5-b1d5-66cb767451ec",
         "475f88ce-2bf9-496c-90f9-028de0894fac",
         "20bc5745-b7b5-452a-959d-0e82ba2455de",
-        "888f59ad-1923-43ab-b81c-25da1f3f2971",
-        "98080228-4563-40dc-bcc9-59dea968062b"
+        "584ec353-73b3-4983-9ede-0e68aa00a519",
+        "57c9ef35-f062-4e2c-bfec-59fd18faf317",
+        "9c3f60f9-0c32-4909-95f1-5c5706719d0d",
+        "29a4dc45-ce7c-464f-95cb-bf60dcedc1a6",
+        "5a390d59-66a8-467b-a542-cd1fa7209aee"
     ],
     "filterType": "GMSprite",
     "folderName": "game",
