@@ -3,7 +3,7 @@
 titleStr = ""
 subtitleStr = "DELUXE EDITION"
 
-versionStr = "v1.0"
+versionStr = "v1.0.1"
 authorStr = "2020 SYRAPT0R"
 
 scr_particles()

@@ -12,6 +12,13 @@ baseOptions[1] = "LOAD GAME"
 baseOptions[2] = "OPTIONS"
 baseOptions[3] = "EXIT"
 
+// HTML5 hack
+var compileForHTML5 = 0
+if compileForHTML5 {
+	menuItemCount = 3
+	baseOptions[3] = ""
+}
+
 // disable loading if no save exists
 col[0] = $FFFFFF
 col[1] = $FFFFFF

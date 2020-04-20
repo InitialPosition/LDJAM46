@@ -9,7 +9,8 @@
         "25998ef0-0805-4017-95df-2cc38bab8b3a",
         "c00cb52d-8a9a-49cb-833b-95b0f585291c",
         "f6fac32f-f47f-4beb-a213-efe935116a48",
-        "fc96f33a-2589-48dd-95b2-b62bb4c3a863"
+        "fc96f33a-2589-48dd-95b2-b62bb4c3a863",
+        "230646b3-ec46-4ad0-9bae-a90c01469837"
     ],
     "filterType": "GMSound",
     "folderName": "sfx",

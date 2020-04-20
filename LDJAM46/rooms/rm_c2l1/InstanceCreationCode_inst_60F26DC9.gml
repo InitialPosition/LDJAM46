@@ -1,0 +1,1 @@
+sound = snd_ee1
